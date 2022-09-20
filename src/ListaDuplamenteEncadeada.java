@@ -22,4 +22,60 @@ public class ListaDuplamenteEncadeada {
         ultimo = novoNo;
         numeroDeNos++;
     }
+
+    public void inserirInicio(NoDuplo novoNo) {
+        novoNo.ant = null;
+        if (primeiro == null) {
+            ultimo = novoNo;
+        } else {
+            novoNo.prox = primeiro;
+            primeiro.ant = novoNo;
+        }
+        primeiro = novoNo;
+        numeroDeNos++;
+    }
+
+    public NoDuplo obterElementoPorPosicao(int posicao) {
+        NoDuplo noTemporario = primeiro;
+        int i = 0;
+
+        while (noTemporario != null && i < posicao) {
+            noTemporario = noTemporario.prox;
+            i++;
+        }
+        return noTemporario;
+    }
+
+    // TODO(Criar uma função para inserir elementos em uma posição específica)
+
+    public String excluirNoUsandoPosicao(int posicao) {
+        String mensagem = "";
+        NoDuplo noTemporario = obterElementoPorPosicao(posicao);
+
+        if (noTemporario == null) {
+            mensagem = "A posição informada está vazia ou não existe";
+        } else if (posicao == 0) {
+            if (noTemporario.prox == null) {
+                primeiro = ultimo = null;
+            } else {
+                primeiro = noTemporario.prox;
+                primeiro.ant = null;
+            }
+            mensagem = "Posição " + posicao + "excluída. \nValor: " + noTemporario.valor;
+        } else if (posicao == numeroDeNos - 1) {
+            ultimo = noTemporario.ant;
+            ultimo.prox = null;
+            mensagem = "Posição " + posicao + "excluída. \nValor: " + noTemporario.valor;
+        } else {
+            noTemporario.ant.prox = noTemporario.prox;
+            noTemporario.prox.ant = noTemporario.ant;
+            mensagem = "Posição " + posicao + "excluída. \nValor: " + noTemporario.valor;
+        }
+        numeroDeNos--;
+        return mensagem;
+    }
+
 }
+
+
+
