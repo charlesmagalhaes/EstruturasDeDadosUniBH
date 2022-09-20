@@ -75,6 +75,21 @@ public class ListaDuplamenteEncadeada {
         return mensagem;
     }
 
+    public String exibirLista() {
+        int i = 0;
+        NoDuplo noTemporario = primeiro;
+        String mensagem = "";
+        while (noTemporario != null) {
+            mensagem = mensagem + "Posição: " + i + "valor: " +
+                    noTemporario.valor + "\n";
+            noTemporario = noTemporario.prox;
+            i++;
+        }
+
+        return mensagem;
+    }
+
+    //TODO(Criar um método que retorno os dados da lista em ordem inversa)
 }
 
 

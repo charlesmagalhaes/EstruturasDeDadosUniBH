@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6c9206c2-12be-42fa-909f-993f4b9a7414" name="Changes" comment="Inclusão do método para inserir elementos no final da lista.">
+    <list default="true" id="6c9206c2-12be-42fa-909f-993f4b9a7414" name="Changes" comment="INclusão de novos métodos.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ListaDuplamenteEncadeada.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ListaDuplamenteEncadeada.java" afterDir="false" />
     </list>
@@ -74,7 +74,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663715050801</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="INclusão de novos métodos.">
+      <created>1663717231945</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1663717231945</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -91,7 +98,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Primeiro Commit" />
     <MESSAGE value="Inclusão do método para inserir elementos no final da lista." />
-    <option name="LAST_COMMIT_MESSAGE" value="Inclusão do método para inserir elementos no final da lista." />
+    <MESSAGE value="INclusão de novos métodos." />
+    <option name="LAST_COMMIT_MESSAGE" value="INclusão de novos métodos." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
