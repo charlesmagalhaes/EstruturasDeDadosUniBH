@@ -28,13 +28,16 @@ public class Main {
        System.out.println("-------------------------------------------------------------");
        
        System.out.println("----Excluindo elemento posiçao 1 da lista");
-       listaTarefas.excluirNoUsandoPosicao(1);
+
+       listaTarefas.excluirNoUsandoPosicao(2);
        System.out.println(listaTarefas.exibirLista());
        
        System.out.println("-------------------------------------------------------------");
-       System.out.println("Inserindo em uma posição específica");
+       System.out.println("Inserindo em uma posição específica...");
        
-       listaTarefas.InserirPosicaoEspecifica(0, new NoDuplo("Futebol"));
+       System.out.println(listaTarefas.InserirPosicaoEspecifica(1, new NoDuplo("Futebol")));
+       System.out.println("-------------------------------------------------------------");
+       
        System.out.println(listaTarefas.exibirLista());
        
     }

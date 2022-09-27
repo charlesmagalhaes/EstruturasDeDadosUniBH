@@ -49,8 +49,10 @@ public class ListaDuplamenteEncadeada {
     // TODO(Criar uma função para inserir elementos em uma posição específica)
     
     public String InserirPosicaoEspecifica(int posicao, NoDuplo novoNo) {
+  
     	String mensagem = "";
     	NoDuplo noTemporario = obterElementoPorPosicao(posicao);
+    	NoDuplo noAntTemporario = obterElementoPorPosicao(posicao-1);
     	NoDuplo novoNoTemporario = novoNo;
     	
     	if (noTemporario == null) {
@@ -60,18 +62,20 @@ public class ListaDuplamenteEncadeada {
     		novoNoTemporario.prox = noTemporario;
     		primeiro = novoNoTemporario;
     		noTemporario.ant = novoNoTemporario;
-    		mensagem = "Inclusão feito com sucesso!!!";
+    		mensagem = "Inclusão feito com sucesso!!! teste";
     	} else if (posicao == numeroDeNos - 1) {	
-    		novoNoTemporario.prox = ultimo;
-    		novoNoTemporario.ant = noTemporario.prox;
     		ultimo.ant = novoNoTemporario;
-    		mensagem = "Inclusão feito com sucesso!!!";
+    		novoNoTemporario.prox = noTemporario;
+    		noAntTemporario.prox = novoNoTemporario;
+    		novoNoTemporario.ant = noAntTemporario;
+    		mensagem = "Inclusão feito com sucesso!!! quando é ultima posição";
     				
     	} else {
-    		novoNoTemporario.prox = noTemporario.prox;
-    		novoNoTemporario.ant = noTemporario;
+    		novoNoTemporario.prox = noTemporario;
+    		novoNoTemporario.ant = noAntTemporario;
     		noTemporario.ant = novoNoTemporario;
-    		mensagem = "Inclusão feito com sucesso!!!";
+    		noAntTemporario.prox = novoNoTemporario;
+    		mensagem = "Inclusão feito com sucesso!!! no meio";
     		
     	}
     		
@@ -102,7 +106,7 @@ public class ListaDuplamenteEncadeada {
             noTemporario.prox.ant = noTemporario.ant;
             mensagem = "Posição " + posicao + "excluída. \nValor: " + noTemporario.valor;
         }
-        numeroDeNos--;
+        numeroDeNos=numeroDeNos-1;
         return mensagem;
     }
 
