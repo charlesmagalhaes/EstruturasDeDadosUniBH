@@ -80,7 +80,7 @@ public class ListaDuplamenteEncadeada {
         NoDuplo noTemporario = primeiro;
         String mensagem = "";
         while (noTemporario != null) {
-            mensagem = mensagem + "Posição: " + i + "valor: " +
+            mensagem = mensagem + "Posição: " + i + " - valor: " +
                     noTemporario.valor + "\n";
             noTemporario = noTemporario.prox;
             i++;
@@ -90,6 +90,23 @@ public class ListaDuplamenteEncadeada {
     }
 
     //TODO(Criar um método que retorno os dados da lista em ordem inversa)
+    
+    
+    public String exibirListaInversa() {
+    	int i = numeroDeNos-1;
+        NoDuplo noTemporario = ultimo;
+        String mensagem = "";
+        while (noTemporario != null) {
+            mensagem = mensagem + "Posição: " + i + " - valor: " +
+                    noTemporario.valor + "\n";
+            noTemporario = noTemporario.ant;
+            i--;
+        }
+
+        return mensagem;
+    }
+    
+    
 }
 
 
