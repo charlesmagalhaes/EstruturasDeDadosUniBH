@@ -34,7 +34,7 @@ public class Main {
        System.out.println("-------------------------------------------------------------");
        System.out.println("Inserindo em uma posição específica");
        
-       listaTarefas.InserirPosicaoEspecifica(2, new NoDuplo("Futebol"));
+       listaTarefas.InserirPosicaoEspecifica(0, new NoDuplo("Futebol"));
        System.out.println(listaTarefas.exibirLista());
        
     }
