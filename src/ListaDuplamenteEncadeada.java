@@ -96,7 +96,7 @@ public class ListaDuplamenteEncadeada {
                 primeiro = noTemporario.prox;
                 primeiro.ant = null;
             }
-            mensagem = "Posição " + posicao + "excluída. \nValor: " + noTemporario.valor;
+            mensagem = "Posição: " + posicao + " excluída. \nValor: " + noTemporario.valor;
         } else if (posicao == numeroDeNos - 1) {
             ultimo = noTemporario.ant;
             ultimo.prox = null;
@@ -104,7 +104,7 @@ public class ListaDuplamenteEncadeada {
         } else {
             noTemporario.ant.prox = noTemporario.prox;
             noTemporario.prox.ant = noTemporario.ant;
-            mensagem = "Posição " + posicao + "excluída. \nValor: " + noTemporario.valor;
+            mensagem = "Posição: " + posicao + " excluída. \nValor: " + noTemporario.valor;
         }
         numeroDeNos=numeroDeNos-1;
         return mensagem;
