@@ -8,7 +8,9 @@ public class Main {
         listaTarefas.inserirFinal(new NoDuplo("Estudar"));
         listaTarefas.inserirFinal(new NoDuplo("Fazer pagamentos"));
         
-        System.out.println("----Lista de tarefas-----");
+       System.out.println("-------------------------------------------------------------");
+        
+       System.out.println("----Lista de tarefas-----");
         
        System.out.println(listaTarefas.exibirLista());
        
@@ -22,5 +24,18 @@ public class Main {
        System.out.println("----Lista inversa-----");
        
        System.out.println(listaTarefas.exibirListaInversa());
+       
+       System.out.println("-------------------------------------------------------------");
+       
+       System.out.println("----Excluindo elemento posiçao 1 da lista");
+       listaTarefas.excluirNoUsandoPosicao(1);
+       System.out.println(listaTarefas.exibirLista());
+       
+       System.out.println("-------------------------------------------------------------");
+       System.out.println("Inserindo em uma posição específica");
+       
+       listaTarefas.InserirPosicaoEspecifica(2, new NoDuplo("Futebol"));
+       System.out.println(listaTarefas.exibirLista());
+       
     }
 }

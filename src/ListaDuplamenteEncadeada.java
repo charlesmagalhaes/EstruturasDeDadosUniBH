@@ -47,6 +47,37 @@ public class ListaDuplamenteEncadeada {
     }
 
     // TODO(Criar uma função para inserir elementos em uma posição específica)
+    
+    public String InserirPosicaoEspecifica(int posicao, NoDuplo novoNo) {
+    	String mensagem = "";
+    	NoDuplo noTemporario = obterElementoPorPosicao(posicao);
+    	NoDuplo novoNoTemporario = novoNo;
+    	
+    	if (noTemporario == null) {
+    		 mensagem = "A posição informada está vazia ou não existe";
+    	} else if (posicao == 0) {
+    		novoNoTemporario.ant = null;
+    		novoNoTemporario.prox = noTemporario;
+    		primeiro = novoNoTemporario;
+    		noTemporario.ant = novoNoTemporario;
+    		mensagem = "Inclusão feito com sucesso!!!";
+    	} else if (posicao == numeroDeNos - 1) {	
+    		novoNoTemporario.prox = ultimo;
+    		novoNoTemporario.ant = noTemporario.prox;
+    		ultimo.ant = novoNoTemporario;
+    		mensagem = "Inclusão feito com sucesso!!!";
+    				
+    	} else {
+    		novoNoTemporario.prox = noTemporario.prox;
+    		novoNoTemporario.ant = noTemporario;
+    		noTemporario.ant = novoNoTemporario;
+    		mensagem = "Inclusão feito com sucesso!!!";
+    		
+    	}
+    		
+    	numeroDeNos++;
+    	return mensagem;	
+    }
 
     public String excluirNoUsandoPosicao(int posicao) {
         String mensagem = "";
