@@ -16,7 +16,7 @@ public class Main {
        
        System.out.println("-------------------------------------------------------------");
        
-       System.out.println("----Buscando valor específico na lista-----");
+       System.out.println("----Buscando valor específico na lista: elemento 3-----");
        System.out.println("Tarefa: "+listaTarefas.obterElementoPorPosicao(2).valor);
        
        System.out.println("-------------------------------------------------------------");
@@ -39,7 +39,7 @@ public class Main {
        
        System.out.println(listaTarefas.InserirPosicaoEspecifica(1, new NoDuplo("Futebol")));
        System.out.println("-------------------------------------------------------------");
-       System.out.println("----Lista de tarefas-----");
+       System.out.println("----Nova Lista de tarefas-----");
        
        System.out.println(listaTarefas.exibirLista());
        
