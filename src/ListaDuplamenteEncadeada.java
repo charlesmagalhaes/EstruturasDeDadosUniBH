@@ -62,20 +62,20 @@ public class ListaDuplamenteEncadeada {
     		novoNoTemporario.prox = noTemporario;
     		primeiro = novoNoTemporario;
     		noTemporario.ant = novoNoTemporario;
-    		mensagem = "Inclusão feito com sucesso!!! teste";
+    		mensagem = "Inclusão feito com sucesso!!!";
     	} else if (posicao == numeroDeNos - 1) {	
     		ultimo.ant = novoNoTemporario;
     		novoNoTemporario.prox = noTemporario;
     		noAntTemporario.prox = novoNoTemporario;
     		novoNoTemporario.ant = noAntTemporario;
-    		mensagem = "Inclusão feito com sucesso!!! quando é ultima posição";
+    		mensagem = "Inclusão feito com sucesso!!!";
     				
     	} else {
     		novoNoTemporario.prox = noTemporario;
     		novoNoTemporario.ant = noAntTemporario;
     		noTemporario.ant = novoNoTemporario;
     		noAntTemporario.prox = novoNoTemporario;
-    		mensagem = "Inclusão feito com sucesso!!! no meio";
+    		mensagem = "Inclusão feito com sucesso!!!";
     		
     	}
     		

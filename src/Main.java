@@ -41,6 +41,9 @@ public class Main {
        
        System.out.println(listaTarefas.exibirLista());
        
+       System.out.println("-------------------------------------------------------------");
+       
+       System.out.println("Inserindo em uma posição específica...");
        System.out.println(listaTarefas.InserirPosicaoEspecifica(1, new NoDuplo("Ler um livro")));
        System.out.println("-------------------------------------------------------------");
        
