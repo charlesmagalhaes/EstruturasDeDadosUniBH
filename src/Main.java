@@ -29,7 +29,9 @@ public class Main {
        
        System.out.println("----Excluindo elemento posiçao 1 da lista");
        System.out.println(listaTarefas.excluirNoUsandoPosicao(1));
+       System.out.println("-------------------------------------------------------------");
        
+       System.out.println("----Nova Lista de tarefas-----");
        System.out.println(listaTarefas.exibirLista());
        
        System.out.println("-------------------------------------------------------------");
