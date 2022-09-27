@@ -29,7 +29,7 @@ public class Main {
        
        System.out.println("----Excluindo elemento posiçao 1 da lista");
 
-       listaTarefas.excluirNoUsandoPosicao(2);
+       listaTarefas.excluirNoUsandoPosicao(1);
        System.out.println(listaTarefas.exibirLista());
        
        System.out.println("-------------------------------------------------------------");
@@ -37,7 +37,22 @@ public class Main {
        
        System.out.println(listaTarefas.InserirPosicaoEspecifica(1, new NoDuplo("Futebol")));
        System.out.println("-------------------------------------------------------------");
+       System.out.println("----Lista de tarefas-----");
        
+       System.out.println(listaTarefas.exibirLista());
+       
+       System.out.println(listaTarefas.InserirPosicaoEspecifica(1, new NoDuplo("Ler um livro")));
+       System.out.println("-------------------------------------------------------------");
+       
+       System.out.println("----Lista de tarefas-----");
+       
+       System.out.println(listaTarefas.exibirLista());
+       
+       System.out.println("-------------------------------------------------------------");
+       
+       System.out.println("----Excluindo elemento posiçao 3 da lista");
+
+       listaTarefas.excluirNoUsandoPosicao(3);
        System.out.println(listaTarefas.exibirLista());
        
     }
